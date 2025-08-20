@@ -8,3 +8,13 @@
   .navbar .menu { flex-direction: column; width: 100%; gap: 0.5rem; }
   .menu li a { padding: 0.5rem 1rem; }
 }
+.diseñarte-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+}

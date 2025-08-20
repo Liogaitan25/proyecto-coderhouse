@@ -1,3 +1,4 @@
+
 @import './utilities/variables';
 @import './utilities/extends';
 @import './utilities/mixin';
@@ -15,17 +16,7 @@
 @import './page/micarrito';
 
 
-/* Main */
-.main-content {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.carousel-item {
-  width: 1vw;
 
-}
 
 /* Banner */
 .banner-section {
@@ -108,4 +99,12 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+/* Layout con Grid */
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header - main - footer */
+  grid-template-columns: 1fr;
+  min-height: 100vh;
 }

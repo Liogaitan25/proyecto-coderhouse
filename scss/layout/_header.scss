@@ -1,5 +1,5 @@
 .header {
-  background-color: $primary-color;
+  background-color: #fffc3f42;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background-color: $primary-color;
+  background-color: #00000042;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -20,10 +20,10 @@
   }
 
   .dropdown-menu {
-    background-color: $primary-color;
+    background-color: violet;
     .dropdown-item {
       color: black !important;
-      &:hover { background-color: $secondary-color; color: #fff !important; }
+      &:hover { background-color: #00ddfa42; color: #fff !important; }
     }
   }
 }

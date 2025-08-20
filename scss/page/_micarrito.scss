@@ -5,7 +5,11 @@
   padding: 0;
 }
 
-h1 { text-align: center; color: #5a2d82; margin-bottom: 40px; }
+h1 {
+  text-align: center;
+  color: #5a2d82;
+  margin-bottom: 40px;
+}
 
 .carrito {
   display: grid;
@@ -13,37 +17,103 @@ h1 { text-align: center; color: #5a2d82; margin-bottom: 40px; }
   gap: 20px;
   max-width: 1200px;
   margin: auto;
+}
 
-  .card {
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.2s ease;
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
 
-    img { width: 100%; height: 180px; object-fit: cover; }
-    .info { padding: 15px;
-      h2 { font-size: 1.1em; color: #333; margin: 0 0 5px; }
-      p { font-size: 0.9em; color: #666; margin: 5px 0; }
-      .precio { font-weight: bold; color: #5a2d82; margin-top: 10px; }
-    }
-    .acciones {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 15px 15px;
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
 
-      input { width: 60px; padding: 5px; text-align: center; }
-      button { background: transparent; border: none; font-size: 1.2em; cursor: pointer; color: #c0392b; }
-    }
-  }
+.card .info {
+  padding: 15px;
+}
 
-  .resumen { max-width: 1200px; margin: 30px auto 0; text-align: right; font-size: 1.2em; }
-  .botones { text-align: right; margin-top: 20px; max-width: 1200px; margin-inline: auto;
-    button { padding: 12px 24px; border-radius: 8px; margin-left: 10px; font-size: 1em; cursor: pointer; }
-  }
-  .vaciar { background-color: #ccc; color: #333; }
-  .comprar { background-color: #fff; color: white; }
+.card .info h2 {
+  font-size: 1.1em;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.card .info p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card .info .precio {
+  font-weight: bold;
+  color: #5a2d82;
+  margin-top: 10px;
+}
+
+.card .acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 15px;
+}
+
+.card .acciones input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.card .acciones button {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #c0392b;
+}
+
+.resumen {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.botones {
+  text-align: right;
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.botones button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+}
+
+.vaciar {
+  background-color: #ccc;
+  color: #333;
+}
+
+.comprar {
+  background-color: #ffffff;
+  color: white;
+}
+/* Layout con Grid */
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header - main - footer */
+  grid-template-columns: 1fr;
+  min-height: 100vh;
 }
