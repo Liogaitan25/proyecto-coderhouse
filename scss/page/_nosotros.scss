@@ -1,0 +1,35 @@
+#nosotros {
+  background-color: #f3e8ff;
+  padding: 3rem 1.5rem;
+
+  h2 {
+    text-align: center;
+    color: $secondary-color;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .contenido-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .texto-nosotros {
+      flex: 1 1 55%;
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .imagen-nosotros {
+      flex: 1 1 40%;
+      text-align: center;
+
+      img { max-width: 100%; height: auto; border-radius: 10px; }
+    }
+  }
+}

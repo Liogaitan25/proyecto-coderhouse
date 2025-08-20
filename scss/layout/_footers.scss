@@ -1,0 +1,19 @@
+.footer {
+  background-color: $footer-bg;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-top: 1px solid $footer-border;
+
+  .redes img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  .derechos {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: $footer-text;
+  }
+}

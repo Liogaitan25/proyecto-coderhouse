@@ -1,0 +1,29 @@
+.header {
+  background-color: $primary-color;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar {
+  background-color: $primary-color;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navbar-nav .nav-link {
+    color: white !important;
+    &:hover, &:focus { color: #f0c040 !important; }
+  }
+
+  .dropdown-menu {
+    background-color: $primary-color;
+    .dropdown-item {
+      color: black !important;
+      &:hover { background-color: $secondary-color; color: #fff !important; }
+    }
+  }
+}
