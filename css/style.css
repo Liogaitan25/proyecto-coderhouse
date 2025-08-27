@@ -37,7 +37,8 @@
   max-width: 100vw;
   padding: 0;
   margin: 0;
-  overflow-x: visible;
+  
+  position: relative;
 }
 
 .carousel {
@@ -74,6 +75,7 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .contenedor {
