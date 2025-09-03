@@ -76,14 +76,23 @@ h1 {
   font-size: 1.2em;
   cursor: pointer;
   color: #c0392b;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
+
 
 .resumen {
   max-width: 1200px;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
   text-align: right;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
 }
+
 
 .botones {
   text-align: right;
@@ -107,9 +116,18 @@ h1 {
 }
 
 .comprar {
-  background-color: #ffffff;
-  color: white;
+  background-color: #5a2d82;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s;
+
+  .card:hover {
+  transform: translateY(-5px);
 }
+
+}
+
+
 /* Layout con Grid */
 .container {
   display: grid;
